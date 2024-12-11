@@ -127,3 +127,20 @@ p {
 .job-description {
   display: none; /* This element shouldn't be visible if unused */
 }
+
+.button {
+  background-color: #005f73; 
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  display: inline-block; 
+  font-size: 16px; 
+  border: none; 
+}
+
+.button:hover {
+  background-color: #0a9396; 
+  cursor: pointer; 
+}
