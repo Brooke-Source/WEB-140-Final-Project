@@ -48,8 +48,11 @@ img {
   height: 100%;
   background-color: #005f73;
   transition: left 0.3s ease; /* Smooth sliding effect */
+  z-index: 1050;
 }
-
+.side-nav.open {
+  left:0;
+}
 .side-nav a {
   display: block;
   padding: 10px;
@@ -93,20 +96,34 @@ img {
   background-color: #0a9396;
 }
 
-
-
 .job-list {
   list-style-type: none;
-  padding: 0;}
-  
-.job-list li {
-  margin-bottom: 10px;
-  cursor: pointer;  
-}  
-
-.job description {
-  display: none;
-  color: #0a9396;  
+  padding: 0;
 }
 
-p {left: 4px;}
+.job-list li {
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+p {
+  left: 4px;
+}
+
+.description-container {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #eafaf1;
+  border: 1px solid #0a9396;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #0a9396;
+  position: absolute; /* Prevent overlapping content flow */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.job-description {
+  display: none; /* This element shouldn't be visible if unused */
+}
