@@ -5,7 +5,7 @@ $(document).ready(function () {
   });
 
   // Image switching logic
-  const images = ['Graphic 5.png', 'Graphic 3.png'];
+  const images = ['', ''];
   let currentImageIndex = 0;
 
   function switchImage() {
