@@ -1,20 +1,70 @@
-﻿Website Audit Analysis – Applied Animal Science 
-Introduction 
-The Applied Animal Science website is designed to provide essential information to college students considering careers in animal care, veterinary assistance, and agricultural science. As these fields continue to grow and evolve, the demand for skilled professionals who have both theoretical knowledge and hands-on experience is increasing. This website serves as a digital portal to inform prospective students about the course offerings, career opportunities, and practical skills they will gain. It aims to highlight the value of the Applied Animal Science program and encourage students to enroll by presenting a clear, engaging, and user-friendly interface. 
-The Applied Animal Science program focuses on preparing students for a variety of roles in the animal and agricultural industries. This includes careers in veterinary clinics, animal shelters, livestock management, and broader agricultural operations. By offering hands-on learning experiences and practical skills development, the program ensures that students graduate with the confidence and competencies required to succeed in these fields. The website plays a crucial role in communicating this mission, outlining the course’s goals, and providing a first impression to potential students. 
-Given the significance of this website as a communication tool, its design, functionality, and ease of use are critical to its success. A well-designed website can attract and inform potential students, while a poorly designed one may discourage them. Features such as working buttons, engaging visuals, and intuitive navigation are essential for maintaining user interest and delivering information effectively. Additionally, the inclusion of interactive elements like hover effects and motion graphics can enhance the user experience and make the website more engaging.
- 
-As the site auditor for this project, my responsibility was to conduct a comprehensive evaluation of the website to ensure it meets the project’s goals and the expectations of its users. The audit focused on several key areas: 
-1. Functionality: Assessing whether all buttons, links, and interactive elements work as intended. This includes checking that navigation flows smoothly and that users can access all necessary information without encountering errors or broken links. 
-2. Ease of Use: Evaluating the website’s overall user experience, including how intuitive and straightforward the navigation is. A user-friendly design ensures that visitors can easily find the information they are looking for, which is particularly important for students who may be unfamiliar with the program. 
-3. Design and Content: Analyzing the visual design elements, such as the layout, color scheme, images, and motion graphics. The design should be consistent and appealing, reinforcing the website’s purpose. Additionally, the content should be clear, concise, and relevant, providing students with the information they need to understand the program and make informed decisions. 
-4. Technical Performance: Testing the website’s performance across different devices and browsers. This includes checking page load speeds, mobile responsiveness, and compatibility with popular browsers like Chrome, Firefox, and Microsoft Edge. A technically sound website ensures that all users have a smooth experience, regardless of their device or browser. 
-The Applied Animal Science website features several elements that contribute to its overall appeal. The use of charming images of animals helps create a welcoming and friendly atmosphere, which is appropriate for a course focused on animal care. Interactive buttons that display additional details when hovered over provide a dynamic way to deliver information without cluttering the interface. Motion graphics add a subtle layer of visual interest, making the website feel modern and engaging. 
+﻿Website Audit Analysis – Applied Animal Science  
+Introduction  
+The Applied Animal Science website is designed as a resource for college students aiming for careers in animal care, veterinary assistance, and agricultural science. These expanding fields require individuals who possess both theoretical understanding and practical experience. The website's purpose is to educate students about available courses, career paths, and essential skills, presenting this information in a clear, engaging, and user-friendly format.  
+The program equips students for positions in veterinary clinics, animal shelters, livestock management, and agricultural enterprises. The website's design, functionality, and user-friendliness are vital for attracting potential students. Features such as functional buttons, engaging visuals, intuitive navigation, and interactive elements (like hover effects and motion graphics) significantly enhance the user experience.  
+As the site auditor, my responsibility was to assess the website's functionality, usability, design, and technical performance. The audit aimed to ensure that these aspects align with project objectives and meet user expectations.  
 
-During the audit, I carefully tested each of these elements to ensure they function correctly and contribute to a positive user experience. The buttons were checked for proper functionality, and the hover effects were evaluated for responsiveness and ease of use. The motion graphics were assessed for smoothness and relevance, ensuring they enhance rather than distract from the content. Additionally, I examined the overall layout and structure of the site to determine if it supports clear and intuitive navigation. 
-The usability assessment focused on how easily users can find and access information. A well-organized website should guide users naturally from one section to another, helping them learn about the program’s goals, course content, and potential career paths. The inclusion of headings, subheadings, and clear labels is crucial for this purpose. I also considered accessibility features, such as keyboard navigation and screen reader compatibility, to ensure the site is usable by a diverse range of users. 
-In terms of design and content, the website’s strengths lie in its simplicity and charm. The images of animals are appealing and relevant, and the color scheme is soft and inviting. The content is concise and provides a good overview of the program. However, some sections could benefit from additional details or context to give users a deeper understanding of the course. Captions or brief descriptions under images and motion graphics could help clarify their relevance and enhance the overall user experience. 
-The technical performance of the site was generally good. The pages loaded quickly on desktop and mobile devices, and the site displayed consistently across different browsers. However, while the hover effects worked well on desktop, they were less effective on mobile devices. Providing touch-friendly alternatives for mobile users would improve the site’s versatility and ensure a smooth experience for all visitors. 
+Lighthouse Audit Results  
+The website was assessed using Google’s Lighthouse audit tool, which evaluated Performance, Accessibility, Best Practices, and SEO. Below are the results and key insights:  
+Performance: 79  
+The performance score of 79 indicates satisfactory performance with opportunities for optimization.  
+* First Contentful Paint: 2.1 s  
+* Largest Contentful Paint: 5.1 s  
+* Total Blocking Time: 20 ms  
+* Cumulative Layout Shift: 0  
+* Speed Index: 2.1 s  
+Opportunities for Improvement:  
+1. Serve Images in Next-Gen Formats: Potential savings of 525 KiB (e.g., using WebP or AVIF).  
+2. Eliminate Render-Blocking Resources: Potential savings of 810 ms by deferring non-essential CSS and JavaScript.  
+3. Reduce Unused CSS and JavaScript: Savings of 11 KiB (CSS) and 40 KiB (JavaScript).  
+4. Optimize Largest Contentful Paint (LCP) Element: This element takes 5,130 ms to load, and optimizing it could enhance user experience.  
+________________  
 
-Overall, the Applied Animal Science website effectively meets its primary goals of informing and engaging prospective students. The combination of functional buttons, intuitive navigation, appealing design, and smooth performance creates a positive user experience. However, there are a few areas where improvements could be made. Enhancing accessibility features, optimizing mobile interactivity, and adding more contextual content would make the website even more effective. 
-In the following sections of this analysis, I will provide a detailed breakdown of my findings in each of the key areas. This will include specific observations, strengths, weaknesses, and actionable recommendations for improvement. By addressing these points, the development team can ensure that the website not only meets but exceeds the expectations of its users, making it a valuable tool for promoting the Applied Animal Science program.
+Accessibility: 92  
+The accessibility score of 92 is robust, with minor enhancements required.  
+Issues Identified:  
+1. Buttons Without Accessible Names: Ensure buttons feature descriptive labels for screen readers.  
+2. Skip Links Not Focusable: Make skip links focusable to improve keyboard navigation.  
+
+Best Practices: 96  
+A score of 96 indicates compliance with modern web standards.  
+Issues Identified:  
+1. Incorrect Image Aspect Ratios: Ensure images retain their intended aspect ratio.  
+2. Content Security Policy (CSP): Review CSP settings to safeguard against XSS attacks.  
+Passed Checks:  
+* Uses HTTPS  
+* Avoids deprecated APIs  
+* Allows pasting into input fields  
+* Legible font sizes and valid HTML structure  
+
+SEO: 91  
+The SEO score of 91 reflects good optimization, with one area needing improvement.  
+Issue Identified:  
+1. Missing Meta Description: Include a concise meta description to enhance search visibility.  
+Passed Checks:  
+* Indexing enabled  
+* Descriptive links  
+* Images with [alt] attributes  
+* Valid hreflang attributes  
+
+Findings and Observations  
+Throughout the audit, I evaluated each element for functionality and user experience. The buttons and hover effects functioned effectively on desktop, providing a dynamic method to present additional information. The motion graphics were smooth and pertinent, contributing a modern touch without overwhelming the interface.  
+The website’s navigation is intuitive, guiding users seamlessly through course details and career options. Headings, subheadings, and clear labels improve usability. However, incorporating accessibility features such as keyboard navigation and support for screen readers would enhance inclusivity.  
+In terms of design, the site’s simplicity and appeal are noteworthy. The images of animals are attractive and relevant, and the gentle color palette fosters a welcoming environment. Nevertheless, certain sections could benefit from more context or captions to clarify images and graphics.  
+________________  
+
+Technical Performance  
+The site loads quickly on both desktop and mobile devices and performs consistently across major browsers. However, hover effects are less effective on mobile devices. Implementing touch-friendly alternatives would improve mobile usability.  
+
+Summary of Recommendations  
+1. Performance Improvements:  
+   * Serve images in next-gen formats.  
+   * Eliminate render-blocking resources.  
+   * Reduce unused CSS and JavaScript.  
+2. Accessibility Enhancements:  
+   * Add accessible names to buttons.  
+   * Make skip links focusable.  
+3. SEO Optimization:  
+   * Include a meta description for improved search visibility.  
+4. Mobile Usability:  
+   * Replace hover effects with touch-friendly interactions.
